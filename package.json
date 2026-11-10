@@ -1,0 +1,17 @@
+{
+  "name": "ytbot",
+  "version": "1.0.0",
+  "description": "",
+  "license": "0BSD",
+  "author": "",
+  "type": "module",
+  "main": "ytbot.js",
+  "scripts": {
+    "start": "node ytbot.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "grammy": "^1.46.0",
+    "youtube-transcript-api": "file:vendor/youtube-transcript-api"
+  }
+}

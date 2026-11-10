@@ -1,0 +1,44 @@
+{
+  "name": "youtube-transcript-api",
+  "version": "0.1.0",
+  "description": "Fetch transcripts/subtitles for YouTube videos (including auto-generated), without a headless browser.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "youtube-transcript-api": "dist/bin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test \"dist/tests/*.test.js\"",
+    "cli": "node dist/bin.js",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "youtube",
+    "transcript",
+    "subtitles",
+    "captions"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "undici": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
